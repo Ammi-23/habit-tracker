@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url(https://www.happinessishomemade.net/wp-content/uploads/2020/12/Free-Habit-Tracker-Printable-Monthly-Tracker-Sheet.jpg);
+    min-width: 100%;
+  }
+
+.app{
+  height:100vh;
+}
+
+/* navbar styling */
+.nav{
+  height:20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  left: 2rem;
+  padding: 15px;
+}
+
+.nav h1{
+  color:#b76b6b;
+}
+
+.nav-button{
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* main container styling */
+.detail-container{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 2rem;
+}
+
+/* each habit card styling */
+.habit-card{
+  width: 70vw;
+  box-shadow: 0 0 0.7rem #02160d;
+  outline: 2px solid #415d4f;
+  border-radius: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #2e5b46;
+}
+
+.habit-detail{
+  position: relative;
+  left: 30px;
+}
+
+.habit{
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.habit-progress{
+  color: antiquewhite;
+}
+
+.delete-button{
+  position: relative;
+  top: 25px;
+  right: 30px;
+  background-color: #b76b6b;
+}
+
+/* Week view styling */
+.week-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.week-card{
+  box-shadow: 0 0 0.7rem #02160d;
+  outline: 2px solid #415d4f;
+  overflow: hidden;
+  border-radius:10%;
+  padding: 10px;
+  background-color: #2e5b46;
+}
+
+.habit-title{
+  text-align: center;
+  font-size: xx-large;
+  color: #d1b45d;
+  font-weight: bold;
+}
+
+/* day container styling for each habit */
+.day-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.day-set{
+  width: 13vw;
+  border-radius: 20%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #dee2e6;
+}
+
+.day-set:hover{
+  transform: scale(1.1);
+}
+
+.week-day{
+  font-size: medium;
+  color: brown;
+  font-weight: bold;
+  margin:0;
+}
+
+.week-date{
+  font-size: small;
+  margin:0;
+}
+
+.week-status{
+  font-size: small;
+  font-weight: 600;
+}
+
+.week-select{
+  width: 9vw;
+  text-align: center;
+  font-size: x-small;
+  border-radius: 18%;
+}
+
+/* styling if the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+  .nav{
+    padding: 8px;
+    left: 1rem;
+  }
+  .habit-card{
+    padding:15px;
+  }
+  .delete-button{
+    top:0px;
+  }
+  .week-card{
+    width: -webkit-fill-available;
+    height: 30vh;
+  }
+  .habit-title{
+    font-size: medium;
+  }
+  .day-container{
+    height: 16vh;
+  }
+  .day-set{
+    width: 12vw;
+  }
+  .week-day{
+    font-size: 0.4rem;
+  }
+  .week-date{
+    font-size: 0.4rem;
+  }
+  .week-status{
+    font-size: 0.4rem;
+  }
+
+}
