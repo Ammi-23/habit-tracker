@@ -1,6 +1,15 @@
+# Habit Tracker App
+This project is a web application built with React.js, Redux toolkit, React-router-dom that allows users to add new habits to their list and view weekly status of habits.
+- Add multiple habits to track.
+- Track each habit everyday. These are the 3 statuses of a habit:
+    - Done - Mark the habit as done for a day
+    - Not done - Mark the habit as not done for a day
+    - None - User did not take any action on a habit for a day
+
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
 ## Available Scripts
 
